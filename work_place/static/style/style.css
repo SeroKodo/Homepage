@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --index: calc(1vw+1vh);
+    --color-header: #000000;
+    --color-text: #131313;
+}
+@font-face {
+    font-family: animeacev02italicbold-C;
+    src: url(../fonts/animeacev02italicbold.ttf);
+}
+body {
+    background-image: url(../images/manga_fon2.webp);
+    color: #131313;
+    font-family: animeacev02italicbold-C;
+    overflow: hidden;
+}
+.hero {
+    width: calc(var(--index) * 40);
+}
