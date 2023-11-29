@@ -25,7 +25,7 @@ body {
 .hero {
     width: calc(var(--index) * 54);
     position: absolute;
-    left: 20vw;
+    left: 26vw;
     top: 2vh;
     z-index: -1;
 }
@@ -41,14 +41,14 @@ body {
     width: min-content;
     bottom: 5vh;
     top: 10vh;
-    left: 16vw;
+    left: 9vw;
 }
 .about-me{
     font-size: calc(var(--index) * 0.7);
     position: absolute;
     bottom: 16vh;
     width: 29vw;
-    left: 16vw;
+    left: 9vw;
     line-height: 1.3;
 }
 .section-2{
@@ -67,4 +67,13 @@ body {
 .gallery__item {
     max-width: calc(var(--index) * 22);
     margin-bottom: var(--gallery-gap);
+    max-height: 180vh;
+    border-radius: 5px;
+}
+.gallery__left {
+    margin-top: calc(var(--gallery-gap) * 1.75);
+}
+.gallery__right .gallery__item {
+    margin: 0;
+    margin-top: var(--gallery-gap);
 }
