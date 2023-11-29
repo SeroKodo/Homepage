@@ -4,20 +4,67 @@
     box-sizing: border-box;
 }
 :root {
-    --index: calc(1vw+1vh);
+    --index: calc(1vw + 1vh);
     --color-header: #000000;
     --color-text: #131313;
+    --gallery-gap: calc(var(--index) * 10);
 }
 @font-face {
     font-family: animeacev02italicbold-C;
     src: url(../fonts/animeacev02italicbold.ttf);
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: animeacev02italicbold-C;
+}
 body {
     background-image: url(../images/manga_fon2.webp);
     color: #131313;
     font-family: animeacev02italicbold-C;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .hero {
-    width: calc(var(--index) * 40);
+    width: calc(var(--index) * 54);
+    position: absolute;
+    left: 20vw;
+    top: 2vh;
+    z-index: -1;
+}
+.main-header {
+    height: 100vh;
+}
+.container {
+    padding: 0 10vw;
+}
+.main-title {
+    font-size: calc(var(--index) * 3);
+    position: absolute;
+    width: min-content;
+    bottom: 5vh;
+    top: 10vh;
+    left: 16vw;
+}
+.about-me{
+    font-size: calc(var(--index) * 0.7);
+    position: absolute;
+    bottom: 16vh;
+    width: 29vw;
+    left: 16vw;
+    line-height: 1.3;
+}
+.section-2{
+    padding: 17px 0;
+}
+.gallery {
+    display: flex;
+    padding: calc(var(--index) * 2) 0;
+}
+.gallery > * {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.gallery__item {
+    max-width: calc(var(--index) * 22);
+    margin-bottom: var(--gallery-gap);
 }
